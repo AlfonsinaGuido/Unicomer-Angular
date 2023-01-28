@@ -1,0 +1,54 @@
+.container2 {
+    height: 70vh;
+    width: 50vw;
+}
+
+.border {
+    border: 2px solid #000;
+    border-left-width: 1px;
+    border-bottom-color: transparent;
+}
+
+.title {
+    justify-content: center;
+    background-color: #fff;
+}
+
+.title__1 {
+    font-weight: 700;
+}
+
+.title__2 {
+    color: #353A61;
+    font-weight: 700;
+}
+
+.border2 {
+    background-color: rgba(53, 58, 97, .9);
+    border: 2px solid #3F8AE2;
+    border-right-color: transparent;
+    color: #fff;
+}
+
+.form {
+    max-width: 80%;
+    font-size: 0.8rem;
+}
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+.btn {
+    background-color: #fff;
+    color: #353A61;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: .3rem 6rem;
+}
+
+.teclado, .footer {
+    text-align: center;
+}
