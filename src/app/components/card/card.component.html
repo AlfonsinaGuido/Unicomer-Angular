@@ -1,1 +1,78 @@
-<p>card works!</p>
+<div class="cards d-flex justify-content-between">
+    <div
+        class="card mb-3 diagonal-gradient rounded-4"
+        style="width: 25rem"
+    >
+        <div class="text-light pt-4 ps-3">
+            <p class="card-text mb-0">Mi saldo</p>
+            <div class="h1">
+                <h5 class="card-title">{{ card.saldo }}</h5>
+            </div>
+        </div>
+        <div class="d-flex text-light justify-content-end pe-3 py-4">
+            <p class="card-title">・・・・ ・・・・ ・・・・ {{ card.numero }}</p>
+        </div>
+        <div class="d-flex justify-content-start ps-3 pb-4">
+            <div class="text-light pe-3">
+                <p class="card-text mb-0">Titular tarjeta</p>
+                <p class="card-title">{{ card.titular }}</p>
+            </div>
+            <div class="text-light">
+                <p class="card-text mb-0">Valida hasta</p>
+                <p class="card-title">{{ card.vencimiento }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="card mb-3 rounded-4" style="width: 25rem">
+        <div>
+            <div class="d-flex justify-content-between">
+                <div class="d-flex">
+                    <div class="pt-4 ps-3">
+                        <i
+                        class="fa-solid fa-circle-arrow-right p-3 rounded-5 icon-ingreso"
+                        ></i>
+                    </div>
+                    <div class="pt-4 ps-3">
+                        <p class="card-text mb-0">Ingresos</p>
+                        <h5 class="card-title2">{{ card.ingreso }}</h5>
+                    </div>
+                </div>
+                <div class="pt-2 pe-3">
+                    <div class="ms-4 in">
+                        <i class="fa-solid fa-caret-up"></i>
+                        <p class="card-title2 mb-0">{{ card.sube }}</p>
+                    </div>
+                    <p class="card-text">Mes pasado</p>
+                </div>
+            </div>
+        </div>
+        <div class="chart__layout">
+            <canvas id="lineChartIngresos"></canvas>
+        </div>
+    </div>
+    <div class="card mb-3 rounded-4" style="width: 25rem">
+        <div class="d-flex justify-content-between">
+            <div class="d-flex">
+                <div class="pt-4 ps-3">
+                    <i
+                        class="fa-solid fa-circle-arrow-right p-3 rounded-5 icon-egreso"
+                    ></i>
+                </div>
+                <div class="pt-4 ps-3">
+                    <p class="card-text mb-0">Egresos</p>
+                    <h5 class="card-title2">{{ card.egreso }}</h5>
+                </div>
+            </div>
+        <div class="pt-2 pe-3">
+            <div class="ms-4 out">
+                <i class="fa-solid fa-caret-down"></i>
+                <p class="card-title2 mb-0">{{ card.baja }}</p>
+                </div>
+                <p class="card-text">Mes pasado</p>
+            </div>
+        </div>
+        <div class="chart__layout">
+            <canvas id="lineChartEgresos"></canvas>
+        </div>
+    </div>
+</div>

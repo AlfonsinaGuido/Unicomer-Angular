@@ -21,7 +21,7 @@ export class DataService {
     return this.http.get<MenuInterface>(`${this.url}/menu/${id}`)
   }
 
-  getAllCard() {
+  getAllCards() {
     return this.http.get<CardInterface[]>(`${this.url}/card`);
   }
   
@@ -44,5 +44,5 @@ export class DataService {
   getOneItemDetail(id: number) {
     return this.http.get<DetailInterface>(`${this.url}/detail/${id}`);
   }
-
+  
 }

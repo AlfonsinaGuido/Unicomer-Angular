@@ -1,5 +1,6 @@
 export interface MenuInterface {
     id: number,
     icono: string,
-    opcion: string
+    nombre: string,
+    router: string
 }

@@ -57,7 +57,7 @@
             >Número de Documento</label
           >
           <input
-            type="text"
+            type="number"
             class="form-control"
             id="numeroDocumento"
             name="numeroDocumento"
@@ -77,18 +77,9 @@
             <strong
               *ngIf="
                 numeroDocumentoField.touched &&
-                numeroDocumentoField.hasError('minlength')
+                numeroDocumentoField.hasError('pattern')
               "
-              >Debe tener mínimo 7 caracteres</strong
-            >
-          </div>
-          <div>
-            <strong
-              *ngIf="
-                numeroDocumentoField.touched &&
-                numeroDocumentoField.hasError('maxlength')
-              "
-              >Debe tener máximo 8 caracteres</strong
+              >Debe tener entre 7 y 10 números y no admite puntos ni comas</strong
             >
           </div>
         </div>
@@ -126,18 +117,24 @@
               >Debe tener máximo 10 caracteres</strong
             >
           </div>
+          <div>
+            <strong
+              *ngIf="
+                passwordField.touched && passwordField.hasError('pattern')
+              "
+              >Debe tener al menos una letra mayúscula, una minúscula, un número y un caracter especial</strong
+            >
+          </div>
         </div>
-        <div class="d-flex justify-content-center mt-3 mb-3">
-          <a routerLink="/home"
-            ><button type="submit" class="btn rounded-4">Ingresar</button></a
-          >
+        <div class="d-grid gap-2 mt-3 mb-3">
+          <button type="submit" class="btn btn-light btn-sm rounded-4" routerLink="/home" [disabled]="!tipoDocumentoField.valid || !numeroDocumentoField.valid || !passwordField.valid">Ingresar</button>
         </div>
       </div>
       <div class="teclado mb-5 pb-4 mt-4">
-        <small><i class="fa-regular fa-keyboard me-2"></i>Teclado virtual</small>
+        <a href=""><small><i class="fa-regular fa-keyboard me-2"></i>Teclado virtual</small></a>
       </div>
       <div class="footer mt-5">
-        <small>¿No tienes cuenta? Registrate aquí</small>
+        <a href=""><small>¿No tienes cuenta? Registrate aquí</small></a>
       </div>
     </div>
   </div>

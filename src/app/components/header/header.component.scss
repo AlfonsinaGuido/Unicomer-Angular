@@ -1,0 +1,32 @@
+.navbar,
+.navbar-expand-lg,
+.bg-body-tertiary,
+.container-fluid {
+    background-color: #F5F5F5;
+    padding: 0 0;
+}
+
+i {
+    border: 1px solid #000;
+    padding: 1.5rem;
+}
+
+i:hover {
+    background-color: #5D95BE;
+}
+
+.opacidad {
+    opacity: 0.5;
+}
+
+.width {
+    width: 40vw;
+}
+
+img {
+    width: 50%;
+}
+
+.nombre {
+    font-weight: bold;
+}

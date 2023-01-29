@@ -4,5 +4,8 @@ export interface CardInterface {
     numero: number,
     titular: string,
     vencimiento: string,
-    crecimiento: string
+    ingreso: number,
+    egreso: number,
+    sube: string,
+    baja: string
 }

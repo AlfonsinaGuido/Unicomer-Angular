@@ -1,0 +1,43 @@
+.diagonal-gradient {
+    background: linear-gradient(to bottom right, #353A61, #5D95BE);
+}
+
+.card-text {
+    font-size: small;
+}
+
+.card-title2 {
+    font-weight: bold;
+}
+
+.icon-ingreso {
+    transform: rotate(135deg);
+    background-color: #353A61;
+    color: #fff;
+}
+
+.icon-egreso {
+    transform: rotate(-45deg);
+    background-color: #5D95BE;
+    color: #fff;
+}
+
+.fa-caret-up {
+    position: relative;
+    top: 0.7rem;
+    left: 0.9rem;
+}
+
+.fa-caret-down {
+    position: relative;
+    top: 0.7rem;
+    left: 0.7rem;
+}
+
+.in {
+    color: green;
+}
+
+.out {
+    color: red;
+}
