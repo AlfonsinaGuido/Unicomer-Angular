@@ -2,6 +2,10 @@
     background: linear-gradient(to bottom right, #353A61, #5D95BE);
 }
 
+.card:hover{
+    transform: scale(1.02);
+}
+
 .card-text {
     font-size: small;
 }
@@ -40,4 +44,12 @@
 
 .out {
     color: red;
+}
+
+.chart__layout {
+    max-height: 70%;
+}
+
+canvas {
+    width: 100%;
 }

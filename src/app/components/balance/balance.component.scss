@@ -1,0 +1,50 @@
+.label {
+    position: relative;
+    font-size: 0.9rem;
+    top: 0.2rem;
+    cursor: pointer;
+}
+
+.label__i__1 {
+    color: #353A61;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.label__i__2 {
+    color: #5D95BE;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.boton {
+    font-weight: bold;
+    background-color: #F5F5F5;
+    position: relative;
+    top: -1rem;
+    height: 3rem;
+    width: 10rem;
+}
+
+.boton__box {
+    position: relative;
+    top: 0.8rem;
+    left: 2.2rem;
+}
+
+.boton__icon {
+    position: relative;
+    top: -0.3rem;
+}
+
+.fa-caret-down {
+    font-size: 1.5rem;
+    color: #353A61;
+}
+
+.boton a {
+    text-decoration: none;
+    color: #353A61;
+}
+
+

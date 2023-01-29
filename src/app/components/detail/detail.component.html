@@ -1,1 +1,31 @@
-<p>detail works!</p>
+<div class="detail__table">
+    <table class="my-4">
+        <div>
+            <tr class="titulos d-flex mb-3">
+                <td></td>
+                <td>Monto total</td>
+                <td class="ps-4">Cuotas</td>
+                <td>Fecha de emisión</td>
+                <td>Mensual</td>
+                <td>Tasa interés</td>
+                <td></td>
+                <td></td>
+            </tr>
+        </div>
+        <div class="mt-3">
+            <tr class="tabla d-flex justify-content-between" *ngFor="let dato of detail" [ngClass]="{'select_row':dato.check==='fa-solid fa-square-check'}">
+                <td class="mt-5" [ngClass]="{'check':dato.check==='fa-solid fa-square-check'}"><i class='{{ dato.check }} ms-4'></i></td>
+                <td class="mt-4">
+                    <p class="mb-1"><b>{{ dato.monto | currency:'$':'symbol':'1.0-0' }}</b></p>
+                    <p class="submonto">{{ dato.submonto }}</p>
+                </td>
+                <td class="mt-5"><b>{{ dato.cuotas }}</b></td>
+                <td class="mt-5 fecha_color">{{ dato.fecha | date: 'longDate' }}</td>
+                <td class="mt-5"><b>{{ dato.mensual | currency:'$':'symbol':'1.0-0' }}</b></td>
+                <td class="mt-5 tasa_color">{{ dato.tasa }}</td>
+                <td class="mt-5 boton rounded-5" [ngClass]="{'boton_opacidad':dato.boton==='Pagar'}"><p class="mt-3">{{ dato.boton }}</p></td>
+                <td class="mt-5 ms-5 ps-2"><a class="last_column" routerLink="/home">・・・</a></td>
+            </tr>
+        </div>
+    </table>
+</div>

@@ -1,5 +1,85 @@
-i {
-    transform: rotate(45deg);
+.td__L {
+    width: 12%;
+}
+
+.td__s {
+    width: 8%;
+}
+
+.red {
+    transform: rotate(-55deg);
+    background-color: #EC595B;
+    color: #fff;
+}
+
+.green {
+    transform: rotate(135deg);
+    background-color: #48A18A;
+    color: #fff;
+}
+
+.green__estado {
+    color: #48A18A;
+}
+
+.red__estado {
+    color: #EC595B;
+}
+
+.grey__estado {
+    color: #9195B1;
+}
+
+.tabla {
+    width: 100%;
+    font-weight: bold;
+}
+
+.tabla a, .footer i {
+    text-decoration: none;
+    color: #9195B1;
+}
+
+.last_column:hover {
+    background-color: #b0d2eb;
+    border-radius: 40%;
+}
+
+.row__grey {
+    background-color: #F5F5F5;
+}
+
+.size_p {
+    font-size: 0.8rem;
+    font-weight: normal;
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+.footer__p {
+    font-size: 0.7rem;
+}
+
+.footer__number {
+    font-size: 0.8rem;
+    margin: 1rem 0.6rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 1rem;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.footer__number:hover {
     background-color: #353A61;
     color: #fff;
+}
+
+.fa-caret-left:hover {
+    transform: scale(1.1);
+}
+
+.fa-caret-right:hover {
+    transform: scale(1.1);
 }

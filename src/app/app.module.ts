@@ -12,7 +12,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
 import { BalanceComponent } from './components/balance/balance.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
-import { DetailComponent } from './components/detail/detail.component';
+import { DetailComponent } from './components/detail/detail.component'
 
 @NgModule({
   declarations: [

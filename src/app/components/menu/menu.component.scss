@@ -7,6 +7,10 @@
     min-height: 5rem;
 }
 
+.logo:hover {
+    transform: scale(1.02);
+}
+
 .width-height{
     width: 85%;
     height: 90%;
@@ -14,9 +18,7 @@
 }
 
 .nav-item {
-    padding: 0.7rem 0;
-    margin-bottom: 7%;
-    font-size: 0.8rem;
+    padding-bottom: 4rem;
 }
 
 li a {

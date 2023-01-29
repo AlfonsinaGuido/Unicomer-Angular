@@ -18,43 +18,42 @@ export class BalanceComponent implements OnInit {
 
   renderChartBalance() {
 
-    new Chart("linechart", {
-      type: 'line',
+    new Chart("barchart", {
+      type: 'bar',
       data: {
         labels: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
         datasets: [{
-          label: 'Income',
-          data: [18, 8, 22, 12, 16, 26, 10],
+          label: 'Esta semana',
+          data: [72, 55, 28, 38, 20, 80, 52],
           borderWidth: 1,
-          backgroundColor: "blue",
-          borderColor: "blue",
-          pointRadius: 0,
-          tension: 0.5,
+          backgroundColor: "#5D95BE",
+          borderColor: "#5D95BE",
+          borderRadius: 50,
         },
         {
-          label: 'Withdeawls',
-          data: [12, 24, 14, 20, 11, 7, 13],
+          label: 'Semana pasada',
+          data: [95, 42, 35, 48, 28, 65, 73],
           borderWidth: 1,
-          backgroundColor: "orange",
-          borderColor: "orange",
-          pointRadius: 0,
-          tension: 0.5,
+          backgroundColor: "#353A61",
+          borderColor: "#353A61",
+          borderRadius: 50,
         }]
       },
 
       options: {
         scales: {
           y: {
-            max: 40,
+            max: 100,
             border: {
               display: false
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: true
             },
             ticks: {
-              display: false
+              display: true,
+              stepSize: 20
             }
           },
           x: {
@@ -63,13 +62,18 @@ export class BalanceComponent implements OnInit {
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: false
             }
           },
         },
         plugins: {
           legend: {
             display: false,
+            labels: {
+              pointStyle: 'circle',
+              usePointStyle: true
+            },
+            align: 'end'
           }
         }
       }

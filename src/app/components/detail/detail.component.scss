@@ -1,0 +1,64 @@
+div {
+    width: 78.5vw;
+}
+
+.tabla {
+    background-color: #fff;
+    border: 1px solid #F5F5F5;
+    height: 7rem;
+    margin: auto;
+}
+
+td {
+    width: 12%;
+}
+
+.last_column {
+    text-decoration: none;
+    color: #9195B1;
+}
+
+.last_column:hover {
+    background-color: #b0d2eb;
+    border-radius: 40%;
+}
+
+.titulos {
+    font-weight: bold;
+}
+
+.submonto {
+    font-size: 0.8rem;
+}
+
+.fecha_color, .tasa_color {
+    color: #9195B1;
+}
+
+.check {
+    color: #353A61;
+}
+
+.fa-square-check:hover{
+    transform: scale(1.1);
+}
+
+.select_row {
+    border: 2px solid #353A61;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+}
+
+.boton {
+    background-color: #353A61;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: -1.5rem;
+    cursor: pointer;
+}
+
+.boton_opacidad {
+    opacity: 0.6;
+}

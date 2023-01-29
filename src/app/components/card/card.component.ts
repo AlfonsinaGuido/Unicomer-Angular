@@ -44,8 +44,8 @@ export class CardComponent implements OnInit {
           label: 'Income',
           data: [18, 8, 22, 12, 16, 26, 10],
           borderWidth: 3,
-          backgroundColor: 'rgba(53,58,97,0.5)',
-          borderColor: "#353A61",
+          backgroundColor: 'rgba(53,58,97,0.2)',
+          borderColor: 'rgba(53,58,97,1)',
           pointRadius: 0,
           fill: true,
           tension: 0.5,
@@ -57,29 +57,29 @@ export class CardComponent implements OnInit {
           y: {
             max: 40,
             border: {
-              display: false,
+              display: false
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: false
             },
             ticks: {
-              display: false,
+              display: false
             }
           },
           x: {
             border: {
-              display: false,
+              display: false
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: false
             }
           },
         },
         plugins: {
           legend: {
-            display: false,
+            display: false
           }
         }
       }
@@ -96,8 +96,8 @@ export class CardComponent implements OnInit {
           label: 'Withdeawls',
           data: [12, 24, 14, 20, 11, 7, 13],
           borderWidth: 3,
-          backgroundColor: 'rgba(93,149,190,0.5)',
-          borderColor: "#5D95BE",
+          backgroundColor: 'rgba(93,149,190,0.2)',
+          borderColor: 'rgba(93,149,190,1)',
           pointRadius: 0,
           fill: true,
           tension: 0.5,
@@ -109,29 +109,29 @@ export class CardComponent implements OnInit {
           y: {
             max: 40,
             border: {
-              display: false,
+              display: false
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: false
             },
             ticks: {
-              display: false,
+              display: false
             }
           },
           x: {
             border: {
-              display: false,
+              display: false
             },
             beginAtZero: true,
             grid: {
-              display: false,
+              display: false
             }
           },
         },
         plugins: {
           legend: {
-            display: false,
+            display: false
           }
         }
       }
