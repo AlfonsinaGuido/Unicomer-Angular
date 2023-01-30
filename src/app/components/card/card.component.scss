@@ -51,5 +51,252 @@
 }
 
 canvas {
-    width: 100%;
+    width: 100vw;
+}
+
+@media screen and (max-width: 575.98px) { 
+    .mobile_title{
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .cards, .card {
+        width: 50vw !important;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    .card-title, .card-title2, .card-text {
+        font-size: 1rem !important;
+        margin: 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_card {
+        max-height: 15rem !important;
+    }
+    .mobile_card1 {
+        height: 15rem;
+        max-width: 25rem;
+    }
+    .mobile_card2{
+        width: 30vw !important;
+    }
+    .mobile_saldo {
+        margin: 5px 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_icon{
+        padding: 0 !important;
+        margin: 15px !important;
+    }
+    .chart__layout {
+        padding: 0 !important;
+        margin: 0px !important;
+        height: 100vh;
+    }
+    canvas {
+        width: 100%;
+        padding: 0 !important;
+        margin-right: 1.2rem !important;
+    }
+    .icon-ingreso, .icon-egreso {
+        padding: 0 !important;
+        border: 2px solid #353A61;
+    }
+    .mobile_ingreso, .mobile_egreso {
+        padding: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .mobile_out, .mobile_in {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .mobile_title{
+        font-size: 1.4rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .cards {
+        margin-top: 3rem !important;
+    }
+    .cards, .card {
+        width: 50vw !important;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    .card-title, .card-title2, .card-text {
+        font-size: 0.8rem !important;
+        margin: 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_card {
+        max-height: 10rem !important;
+    }
+    .mobile_card1 {
+        height: 15rem;
+        max-width: 25rem;
+    }
+    .mobile_card2{
+        width: 50vw !important;
+    }
+    .mobile_saldo {
+        margin: 5px 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_icon{
+        padding: 0 !important;
+        margin: 15px !important;
+    }
+    .chart__layout {
+        padding: 0 !important;
+        margin: 0px !important;
+        height: 100vh;
+    }
+    canvas {
+        width: 100%;
+        padding: 0 !important;
+        margin-right: 1.5rem !important;
+    }
+    .icon-ingreso, .icon-egreso {
+        padding: 0 !important;
+        border: 2px solid #353A61;
+    }
+    .mobile_ingreso, .mobile_egreso {
+        padding: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .mobile_out, .mobile_in {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) { 
+    .mobile_title{
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .cards {
+        margin-top: 3rem !important;
+    }
+    .cards, .card {
+        width: 50vw !important;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    .card-title, .card-title2, .card-text {
+        font-size: 1rem !important;
+        margin: 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_card {
+        max-height: 10rem !important;
+    }
+    .mobile_card1 {
+        height: 15rem;
+        max-width: 25rem;
+    }
+    .mobile_card2{
+        width: 50vw !important;
+    }
+    .mobile_saldo {
+        margin: 5px 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_icon{
+        padding: 0 !important;
+        margin: 15px !important;
+    }
+    .chart__layout {
+        padding: 0 !important;
+        margin: 0px !important;
+        height: 100vh;
+    }
+    canvas {
+        width: 100%;
+        padding: 0 !important;
+        margin-right: 1.5rem !important;
+    }
+    .icon-ingreso, .icon-egreso {
+        padding: 0 !important;
+        border: 2px solid #353A61;
+    }
+    .mobile_ingreso, .mobile_egreso {
+        padding: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .mobile_out, .mobile_in {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) { 
+    .mobile_title{
+        font-size: 2rem;
+        margin-top: 2rem;
+        text-align: center;
+    }
+    .cards, .card {
+        width: 50vw !important;
+        flex-direction: column;
+        margin: 0 auto;
+        padding-left: 5%;
+    }
+    .card-title, .card-title2, .card-text {
+        font-size: 1rem !important;
+        margin: 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_card {
+        max-height: 15rem !important;
+    }
+    .mobile_card1 {
+        height: 15rem;
+        max-width: 25rem;
+    }
+    .mobile_card2{
+        width: 30vw !important;
+    }
+    .mobile_saldo {
+        margin: 5px 5px !important;
+        padding: 0 !important;
+    }
+    .mobile_icon{
+        padding: 0 !important;
+        margin: 15px !important;
+    }
+    .chart__layout {
+        padding: 0 !important;
+        margin: 0px !important;
+        height: 100vh;
+    }
+    canvas {
+        width: 100%;
+        padding: 0 !important;
+        margin-right: 1.2rem !important;
+    }
+    .icon-ingreso, .icon-egreso {
+        padding: 0 !important;
+        border: 2px solid #353A61;
+    }
+    .mobile_ingreso, .mobile_egreso {
+        padding: 0 !important;
+        margin: 5px 0 !important;
+    }
+    .mobile_out, .mobile_in {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    canvas {
+        width: 100%;
+    }
+    .card {
+        margin-right: 5px;
+    }
 }

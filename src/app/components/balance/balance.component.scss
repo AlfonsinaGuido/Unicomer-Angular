@@ -47,4 +47,36 @@
     color: #353A61;
 }
 
+@media screen and (max-width: 1199.98px) { 
+    .balance_none {
+        display: none;
+    }
+}
 
+@media (min-width: 1200px) {
+    .label {
+        font-size: 0.7rem;
+    }
+    .label__i__1 {
+        margin-left: 2rem;
+    }
+    .boton {
+        top: 0rem;
+        height: 2rem;
+        width: 8rem;
+    }
+    .boton__box {
+        top: 0.4rem;
+        left: 0.9rem;
+        font-size: 0.8rem;
+    }
+    .boton__icon {
+        top: 0rem;
+    }
+    .fa-caret-down {
+        font-size: 1rem;
+    }
+    .chart__layout {
+        margin-top: 2rem;;
+    }
+}

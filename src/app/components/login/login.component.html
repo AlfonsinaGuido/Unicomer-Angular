@@ -1,13 +1,13 @@
 <div class="d-flex justify-content-center container mt-5">
   <div
-    class="d-flex container2 border"
+    class="d-flex container2"
     [ngStyle]="{ 'background-image': 'url(assets/images/fondo-login.png)' }"
   >
     <div class="d-flex my-auto col-7 title">
       <div><h4 class="title__1">Bienvenidos a</h4></div>
       <div><h4 class="title__2 ps-2">Unicomer</h4></div>
     </div>
-    <div class="col-5 border2">
+    <div class="col-5 border2 mobile__form">
       <div class="logo mt-3 ms-4">
         <img src="assets/images/logo-ligth.png" alt="Logo" />
       </div>
@@ -49,6 +49,15 @@
                 tipoDocumentoField.hasError('maxlength')
               "
               >Debe tener máximo 10 caracteres</strong
+            >
+          </div>
+          <div>
+            <strong
+              *ngIf="
+                tipoDocumentoField.touched &&
+                tipoDocumentoField.hasError('pattern')
+              "
+              >Solo admite letras y espacios en blanco</strong
             >
           </div>
         </div>

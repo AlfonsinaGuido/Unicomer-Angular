@@ -83,3 +83,18 @@
 .fa-caret-right:hover {
     transform: scale(1.1);
 }
+
+@media screen and (max-width: 1199.98px) { 
+    .transaction_none {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .tabla {
+        font-size: 0.8rem;
+    }
+    .footer {
+        margin-top: 0rem !important;
+    }
+}

@@ -10,7 +10,7 @@
         "app-menu app-balance app-balance app-transaction"
         "app-menu app-detail app-detail app-detail";
     width: 95vw;
-    height: 100vh;
+    height: 95vh;
 }
 
 .app-menu {
@@ -41,4 +41,62 @@
 .app-detail {
     grid-area: app-detail;
     background-color: #F5F5F5;
+}
+
+@media screen and (max-width: 575.98px) { 
+    .app-menu, .app-card {
+        width: 50vw;
+        height: 100vh !important;
+    }
+    .home { 
+        width: 100vw;
+        height: 100vh;
+    }
+    .app-card {
+        position: absolute;
+        left: 40%;
+    }
+    .app-header, .app-balance, .app-transaction, .app-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) { 
+    .app-menu, .app-card {
+        width: 50vw;
+        height: 100vh !important;
+    }
+    .home { 
+        width: 100vw;
+        height: 100vh;
+    }
+    .app-card {
+        position: absolute;
+        left: 40%;
+    }
+    .app-header, .app-balance, .app-transaction, .app-detail {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.98px) { 
+    .app-menu, .app-card {
+        width: 50vw;
+        height: 100vh;
+    }
+    .home { 
+        width: 100vw;
+        height: 100vh;
+    }
+    .app-card {
+        position: absolute;
+        left: 40%;
+    }
+    .app-header, .app-balance, .app-transaction, .app-detail {
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
 }

@@ -1,37 +1,39 @@
-<div class="my-5 ms-3">
-    <h5><b>Últimas transacciones</b></h5>
-</div>
-<div class="mt-4">
-    <table class="tabla" *ngFor="let transaction of transactions">
-        <tr [ngClass]="{'row__grey':transaction.flecha==='fa-solid fa-circle-arrow-right green'}">
-            <td class="td__s"><i class='{{ transaction.flecha }} p-2 rounded-5 ms-3 '></i></td>
-            <td class="td__L"><p class="mb-1 mt-1">{{ transaction.usuario }}</p><p class="size_p">{{ transaction.tipo }}</p></td>
-            <td class="td__L">{{ transaction.monto | currency:'$':'symbol':'1.0-0' }}</td>
-            <td class="td__L"><p class="mb-1 mt-1">{{ transaction.fecha | date: 'mediumDate' }}</p><p class="size_p">{{ transaction.hora }}</p></td>
-            <td class="td__L" [ngClass]="{'green__estado':transaction.estado==='Completado','red__estado':transaction.estado==='Cancelado','grey__estado':transaction.estado==='Pendiente'}">{{ transaction.estado }}</td>
-            <td class="td__s"><a class="last_column" routerLink="/home">・・・</a></td>
-        </tr>
-    </table>
-</div>
-<div class="d-flex footer justify-content-between mx-3 mt-5 mb-3">
-    <div>
-        <p class="footer__p">Mostrar 1-5 de 100</p>
+<div class= "transaction_none">
+    <div class="mt-3 ms-3">
+        <h5><b>Últimas transacciones</b></h5>
     </div>
-    <div class="d-flex me-4">
+    <div class="mt-4">
+        <table class="tabla" *ngFor="let transaction of transactions">
+            <tr [ngClass]="{'row__grey':transaction.flecha==='fa-solid fa-circle-arrow-right green'}">
+                <td class="td__s"><i class='{{ transaction.flecha }} p-2 rounded-5 ms-3 '></i></td>
+                <td class="td__L"><p class="mb-1 mt-1">{{ transaction.usuario }}</p><p class="size_p">{{ transaction.tipo }}</p></td>
+                <td class="td__L">{{ transaction.monto | currency:'$':'symbol':'1.0-0' }}</td>
+                <td class="td__L"><p class="mb-1 mt-1">{{ transaction.fecha | date: 'mediumDate' }}</p><p class="size_p">{{ transaction.hora }}</p></td>
+                <td class="td__L" [ngClass]="{'green__estado':transaction.estado==='Completado','red__estado':transaction.estado==='Cancelado','grey__estado':transaction.estado==='Pendiente'}">{{ transaction.estado }}</td>
+                <td class="td__s"><a class="last_column" routerLink="/home">・・・</a></td>
+            </tr>
+        </table>
+    </div>
+    <div class="d-flex footer justify-content-between mx-3 mt-5 mb-3">
         <div>
-            <a routerLink="/home"><i class="fa-solid fa-caret-left"></i></a>
+            <p class="footer__p">Mostrar 1-5 de 100</p>
         </div>
-        <div>
-            <a class="footer__number" routerLink="/home">1</a>
-        </div>
-        <div>
-            <a class="footer__number" routerLink="/home">2</a>
-        </div>
-        <div>
-            <a class="footer__number" routerLink="/home">3</a>
-        </div>
-        <div>
-            <a routerLink="/home"><i class="fa-solid fa-caret-right"></i></a>
+        <div class="d-flex me-4">
+            <div>
+                <a routerLink="/home"><i class="fa-solid fa-caret-left"></i></a>
+            </div>
+            <div>
+                <a class="footer__number" routerLink="/home">1</a>
+            </div>
+            <div>
+                <a class="footer__number" routerLink="/home">2</a>
+            </div>
+            <div>
+                <a class="footer__number" routerLink="/home">3</a>
+            </div>
+            <div>
+                <a routerLink="/home"><i class="fa-solid fa-caret-right"></i></a>
+            </div>
         </div>
     </div>
 </div>

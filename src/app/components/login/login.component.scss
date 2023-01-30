@@ -5,12 +5,8 @@
 .container2 {
     height: 80vh;
     width: 50vw;
-}
-
-.border {
-    border: 2px solid #000;
-    border-left-width: 1px;
-    border-bottom-color: transparent;
+    border: 1px solid #000;
+    border-top-width: 2px;
 }
 
 .title {
@@ -63,4 +59,83 @@
 a {
     text-decoration: none;
     color: #fff;
+}
+
+@media screen and (max-width: 513.99px) { 
+    .container {
+        margin: 0 !important;
+    }
+    .container2 {
+        height: 100vh;
+        width: 100vw;
+        flex-direction: column;
+    }
+    .mobile__form{
+        font-size: 0.8rem;
+        width: 100%;
+        height: 80vh;
+    }
+    .form { 
+        margin: 15px auto !important;
+        width: 100vw;
+    }
+    .title {
+        text-align: center;
+        width: 100%;
+    }
+    .title__1 {
+        font-size: 1.2rem;
+    }
+    .title__2 {
+        font-size: 1.2rem;
+    }
+    .strong {
+        font-size: small;
+    }
+    .logo{
+        margin-left: 30px !important;
+    }
+    .logo img{
+        width: 30%;
+    }
+    .teclado {
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 514px) and (max-width: 1199.98px) { 
+    .title__1, .title__2 {
+        font-size: 1.2rem;
+    }
+    .container2 {
+        height: 50vh;
+        width: 60vh;
+    }
+    .logo img{
+        width: 40%;
+    }
+    .teclado {
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .title__1, .title__2 {
+        font-size: 1.3rem;
+    }
+    .container2 {
+        height: 70vh;
+    }
+    .teclado {
+        margin-bottom: 1rem !important;
+    }
+    .footer{
+        margin-top: 1rem !important;
+    }
 }

@@ -1,12 +1,12 @@
-<div class="my-4">
-    <h4><b>Inicio</b></h4>
+<div class="mb-4">
+    <h4 class="mobile_title"><b>Inicio</b></h4>
 </div>
 <div class="cards d-flex justify-content-between">
     <div
-        class="card mb-3 diagonal-gradient rounded-5"
+        class="card mobile_card mobile_card1 mb-3 diagonal-gradient rounded-5"
         style="width: 25rem"
     >
-        <div class="text-light pt-4 ps-3">
+        <div class="text-light mobile_saldo pt-4 ps-3">
             <p class="card-text mb-0">Mi saldo</p>
             <div class="h1">
                 <h5 class="card-title">{{ card.saldo | currency:'$':'symbol':'1.0-0' }}</h5>
@@ -26,21 +26,21 @@
             </div>
         </div>
     </div>
-    <div class="card mb-3 rounded-5" style="width: 25rem">
+    <div class="card mb-3 rounded-5 mobile_card mobile_card2" style="width: 25rem">
         <div>
             <div class="d-flex justify-content-between">
                 <div class="d-flex">
-                    <div class="pt-4 ps-3">
+                    <div class="pt-4 ps-3 mobile_icon">
                         <i
                         class="fa-solid fa-circle-arrow-right p-3 rounded-5 icon-ingreso"
                         ></i>
                     </div>
-                    <div class="pt-4 ps-3">
+                    <div class="pt-4 ps-3 mobile_ingreso">
                         <p class="card-text mb-0">Ingresos</p>
                         <h5 class="card-title2">{{ card.ingreso | currency:'$':'symbol':'1.0-0' }}</h5>
                     </div>
                 </div>
-                <div class="pt-2 pe-3">
+                <div class="pt-2 pe-3 mobile_in">
                     <div class="ms-4 in">
                         <i class="fa-solid fa-caret-up"></i>
                         <p class="card-title2 mb-0">+{{ card.sube | percent:'1.1-2' }}</p>
@@ -53,20 +53,20 @@
             <canvas class="mx-auto" id="lineChartIngresos"></canvas>
         </div>
     </div>
-    <div class="card mb-3 rounded-5" style="width: 25rem">
+    <div class="card mb-3 rounded-5 mobile_card mobile_card2" style="width: 25rem">
         <div class="d-flex justify-content-between">
             <div class="d-flex">
-                <div class="pt-4 ps-3">
+                <div class="pt-4 ps-3 mobile_icon">
                     <i
-                        class="fa-solid fa-circle-arrow-right p-3 rounded-5 icon-egreso"
+                       class="fa-solid fa-circle-arrow-right p-3 rounded-5 icon-egreso"
                     ></i>
                 </div>
-                <div class="pt-4 ps-3">
+                <div class="pt-4 ps-3 mobile_egreso">
                     <p class="card-text mb-0">Egresos</p>
                     <h5 class="card-title2">{{ card.egreso | currency:'$':'symbol':'1.0-0' }}</h5>
                 </div>
             </div>
-        <div class="pt-2 pe-3">
+        <div class="pt-2 pe-3 mobile_out">
             <div class="ms-4 out">
                 <i class="fa-solid fa-caret-down"></i>
                 <p class="card-title2 mb-0">-{{ card.baja | percent:'1.1-2' }}</p>

@@ -35,3 +35,13 @@ img {
 .nombre:hover {
     transform: scale(1.02);
 }
+
+@media screen and (max-width: 1199.98px) { 
+    .navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 1200px) {
+
+}
