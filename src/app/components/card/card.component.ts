@@ -13,7 +13,7 @@ export class CardComponent implements OnInit {
 
   card = {
     saldo: 0,
-    numero: 0,
+    numero: "",
     titular: "",
     vencimiento: "",
     ingreso: 0,

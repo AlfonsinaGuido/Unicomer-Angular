@@ -8,7 +8,7 @@
                 <td class="td__s"><i class='{{ transaction.flecha }} p-2 rounded-5 ms-3 '></i></td>
                 <td class="td__L"><p class="mb-1 mt-1">{{ transaction.usuario }}</p><p class="size_p">{{ transaction.tipo }}</p></td>
                 <td class="td__L">{{ transaction.monto | currency:'$':'symbol':'1.0-0' }}</td>
-                <td class="td__L"><p class="mb-1 mt-1">{{ transaction.fecha | date: 'mediumDate' }}</p><p class="size_p">{{ transaction.hora }}</p></td>
+                <td class="td__L"><p class="mb-1 mt-1">{{ transaction.fecha | myDateTransaction }}</p><p class="size_p">{{ transaction.hora }}</p></td>
                 <td class="td__L" [ngClass]="{'green__estado':transaction.estado==='Completado','red__estado':transaction.estado==='Cancelado','grey__estado':transaction.estado==='Pendiente'}">{{ transaction.estado }}</td>
                 <td class="td__s"><a class="last_column" routerLink="/home">・・・</a></td>
             </tr>

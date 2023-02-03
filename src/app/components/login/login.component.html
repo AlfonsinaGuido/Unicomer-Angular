@@ -17,6 +17,8 @@
             >Tipo de Documento</label
           >
           <input
+            [class.is-valid]="isTipoDocumentoFieldValid"
+            [class.is-invalid]="isTipoDocumentoFieldInvalid"
             type="text"
             class="form-control"
             id="tipoDocumento"
@@ -66,6 +68,8 @@
             >Número de Documento</label
           >
           <input
+            [class.is-valid]="isNumeroDocumentoFieldValid"
+            [class.is-invalid]="isNumeroDocumentoFieldInvalid"
             type="number"
             class="form-control"
             id="numeroDocumento"
@@ -95,6 +99,8 @@
         <div class="mb-3">
           <label for="password" class="form-label">Clave</label>
           <input
+            [class.is-valid]="isPasswordFieldValid"
+            [class.is-invalid]="isPasswordFieldInvalid"
             type="password"
             class="form-control"
             id="password"

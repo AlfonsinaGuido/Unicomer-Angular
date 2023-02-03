@@ -17,4 +17,29 @@ export class LoginComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
+  get isTipoDocumentoFieldValid() {
+    return this.tipoDocumentoField.touched && this.tipoDocumentoField.valid;
+  }
+
+  get isTipoDocumentoFieldInvalid() {
+    return this.tipoDocumentoField.touched && this.tipoDocumentoField.invalid;
+  }
+
+  get isNumeroDocumentoFieldValid() {
+    return this.numeroDocumentoField.touched && this.numeroDocumentoField.valid;
+  }
+
+  get isNumeroDocumentoFieldInvalid() {
+    return this.numeroDocumentoField.touched && this.numeroDocumentoField.invalid;
+  }
+
+  get isPasswordFieldValid() {
+    return this.passwordField.touched && this.passwordField.valid;
+  }
+
+  get isPasswordFieldInvalid() {
+    return this.passwordField.touched && this.passwordField.invalid;
+  }
+  
 }

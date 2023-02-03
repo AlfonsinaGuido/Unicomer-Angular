@@ -12,7 +12,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { CardComponent } from './components/card/card.component';
 import { BalanceComponent } from './components/balance/balance.component';
 import { TransactionComponent } from './components/transaction/transaction.component';
-import { DetailComponent } from './components/detail/detail.component'
+import { DetailComponent } from './components/detail/detail.component';
+import { PointsPipe } from './pipes/points.pipe';
+import { MyDateTransactionPipe } from './pipes/my-date-transaction.pipe';
+import { MyDateDetailPipe } from './pipes/my-date-detail.pipe'
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { DetailComponent } from './components/detail/detail.component'
     CardComponent,
     BalanceComponent,
     TransactionComponent,
-    DetailComponent
+    DetailComponent,
+    PointsPipe,
+    MyDateTransactionPipe,
+    MyDateDetailPipe
   ],
   imports: [
     BrowserModule,

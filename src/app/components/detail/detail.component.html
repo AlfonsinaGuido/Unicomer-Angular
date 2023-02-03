@@ -20,7 +20,7 @@
                     <p class="submonto">{{ dato.submonto }}</p>
                 </td>
                 <td class="mt-5"><b>{{ dato.cuotas }}</b></td>
-                <td class="mt-5 fecha_color">{{ dato.fecha | date: 'longDate' }}</td>
+                <td class="mt-5 fecha_color">{{ dato.fecha | myDateDetail }}</td>
                 <td class="mt-5"><b>{{ dato.mensual | currency:'$':'symbol':'1.0-0' }}</b></td>
                 <td class="mt-5 tasa_color">{{ dato.tasa }}</td>
                 <td class="mt-5 boton rounded-5" [ngClass]="{'boton_opacidad':dato.boton==='Pagar'}"><p class="mt-3">{{ dato.boton }}</p></td>
